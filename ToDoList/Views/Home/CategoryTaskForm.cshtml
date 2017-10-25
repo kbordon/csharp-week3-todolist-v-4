@@ -1,0 +1,9 @@
+<h1>Add a new task to @Model.GetName()</h1>
+<form action='/tasks' method='post'>
+    <input id='category-id' name='category-id' type='hidden' value='@Model.GetId()'>
+    <label for='task-description'>Task description</label>
+    <input id='task-description' name='task-description' type='text'>
+    <label for="task-due-date">Due Date</label>
+    <input type="datetime-local" name="task-due-date" id="task-due-date">
+    <button type='submit'>Add task</button>
+</form>
